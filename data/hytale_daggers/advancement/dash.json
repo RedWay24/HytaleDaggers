@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "using_daggers": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "#minecraft:swords",
+          "predicates": {
+            "minecraft:custom_data": {
+              "dagger": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "hytale_daggers:dash_use"
+  }
+}
