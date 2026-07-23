@@ -26,26 +26,37 @@
   "effects": {
     "minecraft:tick": [
       {
-        "requirements": {
-          "condition": "minecraft:entity_scores",
-          "entity": "this",
-          "scores": {
-            "dash_charge": 20
+        "requirements": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "dash_charge": 20
+            }
           }
-        },
+        ],
         "effect": {
-          "type": "minecraft:apply_impulse",
-          "direction": [
-            0,
-            0,
-            1
-          ],
-          "coordinate_scale": [
-            1,
-            0.8,
-            1
-          ],
-          "magnitude": 1.5
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:apply_impulse",
+              "direction": [
+                0,
+                0,
+                1
+              ],
+              "coordinate_scale": [
+                1,
+                0.8,
+                1
+              ],
+              "magnitude": 1.5
+            },
+            {
+              "type": "minecraft:apply_exhaustion",
+              "amount": 2
+            }
+          ]
         }
       }
     ],

@@ -1,7 +1,7 @@
 {
   "criteria": {
-    "using_daggers": {
-      "trigger": "minecraft:using_item",
+    "equip_daggers": {
+      "trigger": "minecraft:tick",
       "conditions": {
         "player": [
           {
@@ -13,6 +13,6 @@
     }
   },
   "rewards": {
-    "function": "hytale_daggers:dash_use"
+    "function": "hytale_daggers:equip_dummy"
   }
 }

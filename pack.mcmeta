@@ -1,7 +1,6 @@
 {
   "pack": {
     "description": "Add daggers that are very similar to Hytale daggers",
-    "pack_format": 107,
     "min_format": [107, 1],
     "max_format": [107, 1]
   }

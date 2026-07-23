@@ -1,0 +1,22 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:bundle_contents": [
+      {
+        "id": "minecraft:wooden_hoe",
+        "count": 1
+      }
+    ],
+    "minecraft:custom_data": {
+      "dummy_dagger": true
+    },
+    "minecraft:equippable": {
+      "slot": "offhand",
+      "swappable": false,
+      "damage_on_hurt": false
+    },
+    "minecraft:tooltip_display": {
+      "hide_tooltip": true
+    }
+  }
+}

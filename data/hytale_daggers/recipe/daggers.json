@@ -23,16 +23,16 @@
       },
       "minecraft:attribute_modifiers": [
         {
-          "type": "minecraft:attack_speed",
-          "id": "minecraft:base_attack_speed",
-          "amount": 2,
+          "type": "minecraft:attack_damage",
+          "id": "minecraft:base_attack_damage",
+          "amount": 1,
           "operation": "add_value",
           "slot": "mainhand"
         },
         {
-          "type": "minecraft:attack_damage",
-          "id": "minecraft:base_attack_damage",
-          "amount": 1,
+          "type": "minecraft:attack_speed",
+          "id": "minecraft:base_attack_speed",
+          "amount": 2,
           "operation": "add_value",
           "slot": "mainhand"
         }
@@ -41,7 +41,7 @@
         "hytale_daggers:dash": 1
       },
       "minecraft:custom_data": {
-        "dagger": true
+        "hytale_daggers": true
       },
       "minecraft:item_name": {
         "text": "Diamond Daggers"
@@ -53,6 +53,10 @@
         "max_creative_reach": 2.5,
         "hitbox_margin": 0.125,
         "mob_factor": 1
+      },
+      "minecraft:equippable": {
+        "slot": "mainhand",
+        "swappable": false
       }
     },
     "count": 1
