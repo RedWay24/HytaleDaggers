@@ -6,7 +6,7 @@
       "mainhand": {
         "predicates": {
           "minecraft:custom_data": {
-            "hytale_daggers": true
+            "hytale_daggers": {}
           }
         }
       }

@@ -5,11 +5,11 @@
     "S S"
   ],
   "key": {
-    "D": "minecraft:diamond",
-    "S": "minecraft:breeze_rod"
+    "D": "minecraft:iron_ingot",
+    "S": "minecraft:stick"
   },
   "result": {
-    "id": "minecraft:diamond_sword",
+    "id": "minecraft:iron_sword",
     "components": {
       "minecraft:kinetic_weapon": {
         "delay_ticks": 20,
@@ -32,7 +32,7 @@
         {
           "type": "minecraft:attack_speed",
           "id": "minecraft:base_attack_speed",
-          "amount": 2,
+          "amount": 4,
           "operation": "add_value",
           "slot": "mainhand"
         }
@@ -41,17 +41,17 @@
         "hytale_daggers:dash": 1
       },
       "minecraft:custom_data": {
-        "hytale_daggers": true
+        "hytale_daggers": {"tier":"iron"}
       },
       "minecraft:item_name": {
-        "text": "Diamond Daggers"
+        "text": "Iron Daggers"
       },
       "minecraft:attack_range": {
         "min_reach": 0,
         "max_reach": 2.5,
         "min_creative_reach": 0,
         "max_creative_reach": 2.5,
-        "hitbox_margin": 0.125,
+        "hitbox_margin": 0,
         "mob_factor": 1
       },
       "minecraft:equippable": {

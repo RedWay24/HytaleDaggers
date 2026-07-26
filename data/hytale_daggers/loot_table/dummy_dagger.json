@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_11",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:bundle_contents": [
+                  {
+                    "id": "minecraft:wooden_hoe",
+                    "count": 1
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "dummy_dagger": {}
+                },
+                "minecraft:equippable": {
+                  "slot": "offhand",
+                  "swappable": false,
+                  "damage_on_hurt": false
+                },
+                "!minecraft:jukebox_playable": {},
+                "minecraft:item_name": {
+                  "text": "Dagger",
+                  "color": "gray"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_contents",
+              "component": "minecraft:container",
+              "entries": [
+                {
+                  "type": "minecraft:slots",
+                  "slot_source": {
+                    "type": "minecraft:slot_range",
+                    "source": "this",
+                    "slots": "weapon.offhand"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
