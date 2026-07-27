@@ -1,0 +1,29 @@
+name: Build Release ZIP
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create release zip
+        run: |
+          mkdir HytaleDaggers
+          cp -r data HytaleDaggers/
+          cp -r assets HytaleDaggers/
+          cp pack.mcmeta HytaleDaggers/
+          cp pack.png HytaleDaggers/
+
+          cd HytaleDaggers
+          zip -r ../HytaleDaggers-${{ github.event.release.tag_name }}.zip .
+
+      - name: Upload release asset
+        uses: softprops/action-gh-release@v2
+        with:
+          files: HytaleDaggers-${{ github.event.release.tag_name }}.zip
