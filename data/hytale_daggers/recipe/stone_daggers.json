@@ -44,7 +44,7 @@
         "hytale_daggers": {"tier":"stone"}
       },
       "minecraft:item_name": {
-        "text": "Copper Daggers"
+        "text": "Stone Daggers"
       },
       "minecraft:attack_range": {
         "min_reach": 0,

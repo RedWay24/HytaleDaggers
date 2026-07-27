@@ -1,8 +1,9 @@
 # Update the netherite daggers with the right tier
 execute as @a \
 if items entity @s weapon.mainhand netherite_sword[minecraft:custom_data~{hytale_daggers:{tier:"diamond"}}] \
-run item modify entity @s weapon.mainhand { \
-function:"minecraft:set_custom_data",tag:{hytale_daggers:{tier:"netherite"}}}
+run item modify entity @s weapon.mainhand {function:"minecraft:set_components", components: { \
+"minecraft:custom_data":{hytale_daggers:{tier:"netherite"}}, \
+"minecraft:item_name":{text:"Netherite Daggers"}}}
 
 # Equip a dummy dagger in the offhand, if needed
 execute as @a \

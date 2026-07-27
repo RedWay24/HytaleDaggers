@@ -44,7 +44,7 @@
         "hytale_daggers": {"tier":"golden"}
       },
       "minecraft:item_name": {
-        "text": "Copper Daggers"
+        "text": "Golden Daggers"
       },
       "minecraft:attack_range": {
         "min_reach": 0,

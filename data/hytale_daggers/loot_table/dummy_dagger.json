@@ -29,7 +29,8 @@
                 "minecraft:item_name": {
                   "text": "Dagger",
                   "color": "gray"
-                }
+                },
+                "minecraft:enchantment_glint_override": true
               }
             },
             {

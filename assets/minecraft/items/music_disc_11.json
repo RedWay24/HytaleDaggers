@@ -33,6 +33,15 @@
       },
       {
         "when": {
+          "dummy_dagger": {"tier": "iron"}
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "hytale_daggers:item/iron_dagger"
+        }
+      },
+      {
+        "when": {
           "dummy_dagger": {"tier": "diamond"}
         },
         "model": {
