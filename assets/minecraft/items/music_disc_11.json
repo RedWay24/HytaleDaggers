@@ -1,0 +1,58 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_data",
+    "cases": [
+      {
+        "when": {
+          "dummy_dagger": {"tier": "stone"}
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "hytale_daggers:item/stone_dagger"
+        }
+      },
+      {
+        "when": {
+          "dummy_dagger": {"tier": "golden"}
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "hytale_daggers:item/golden_dagger"
+        }
+      },
+      {
+        "when": {
+          "dummy_dagger": {"tier": "copper"}
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "hytale_daggers:item/copper_dagger"
+        }
+      },
+      {
+        "when": {
+          "dummy_dagger": {"tier": "diamond"}
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "hytale_daggers:item/diamond_dagger"
+        }
+      },
+      {
+        "when": {
+          "dummy_dagger": {"tier": "netherite"}
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "hytale_daggers:item/netherite_dagger"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/music_disc_11"
+    }
+  }
+}

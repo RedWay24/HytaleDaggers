@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "hytale_daggers:item/stone_daggers"
+  }
+}
